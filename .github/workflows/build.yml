@@ -2,7 +2,10 @@ name: Build
 
 on:
   push:
-    branches: [ master, dev ]
+    branch: dev
 jobs:
   build:
-  uses: ArminJo/arduino-test-compile@v3
+   name: Build
+  runs-on: ubuntu-latest
+  steps:
+  - uses: ArminJo/arduino-test-compile@v3
