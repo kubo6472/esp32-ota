@@ -1,2 +1,8 @@
-- name: Test compile for Arduino
+name: Build
+
+on:
+  push:
+    branches: [ master, dev ]
+jobs:
+  build:
   uses: ArminJo/arduino-test-compile@v3
